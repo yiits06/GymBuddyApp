@@ -1,0 +1,136 @@
+{
+  "settings": {
+    "title": "Account Settings",
+    "account_management": "ACCOUNT MANAGEMENT",
+    "edit_profile": "Edit Profile",
+    "notifications_detailed": "NOTIFICATIONS (DETAILED)",
+    "msg_notifications": "Message Notifications",
+    "msg_notifications_desc": "When you receive a new message",
+    "match_notifications": "Match Notifications",
+    "match_notifications_desc": "Notify when you match with someone new",
+    "app_preferences": "APP PREFERENCES",
+    "language": "Language",
+    "privacy_security": "PRIVACY & SECURITY",
+    "private_profile": "Private Profile",
+    "private_profile_desc": "Your profile is hidden in the discover screen",
+    "change_password": "Change Password",
+    "support_info": "SUPPORT & INFO",
+    "help_center": "Help Center (FAQ)",
+    "terms_of_service": "Terms of Service",
+    "privacy_policy": "Privacy Policy",
+    "secure_logout": "SECURE LOGOUT",
+    "logout": "Log Out",
+    "delete_account": "Delete My Account",
+    "reset_email_sent": "Password reset link sent to your email.",
+    "reset_email_error": "An error occurred. Please try again.",
+    "no_email_found": "No email address found linked to this account."
+  },
+  "welcome": {
+    "subtitle": "FIND YOUR PARTNER,\nPUSH YOUR LIMITS",
+    "premium_community": "PREMIUM COMMUNITY",
+    "start_now": "Start Now",
+    "login": "Log In",
+    "online_partners": "1,204 Online Partners",
+    "verified_profiles": "Verified Profiles"
+  },
+  "auth": {
+    "email": "Email Address",
+    "password": "Password",
+    "error": "Error"
+  },
+  "login": {
+    "enter_email_password": "Please enter your email and password.",
+    "login_failed": "Login failed.",
+    "welcome_back": "Welcome\nBack",
+    "partner_waiting": "Your workout partner is waiting for you.",
+    "forgot_password": "Forgot Password",
+    "no_account": "Don't have an account? ",
+    "register": "Register"
+  },
+  "forgot_password": {
+    "enter_registered_email": "Please enter your registered email address.",
+    "link_sent": "Password reset link sent to your email.",
+    "error_occurred": "Error: Something went wrong. Check your email.",
+    "title": "Forgot\nPassword?",
+    "instruction": "Enter your email, and we'll send you a link to reset your password.",
+    "send_link": "Send Link"
+  },
+  "profile": {
+    "not_found": "Profile not found",
+    "new_user": "New User",
+    "not_specified": "Not specified",
+    "help_support": "Help and Support",
+    "notifications_coming_soon": "Notifications are coming soon!",
+    "fitness_partner_title": "Elite Fitness Partner | SF, CA",
+    "share_profile": "Share Profile",
+    "share_text": "Hey! Check out my GymBuddy profile: ",
+    "partner_trust_score": "PARTNER TRUST SCORE",
+    "weekly_streak": "WEEKLY STREAK",
+    "days": "days",
+    "total_sessions": "TOTAL SESSIONS",
+    "athletic_profile": "ATHLETIC PROFILE",
+    "experience_level": "Experience Level",
+    "focus_goals": "Focus Goals",
+    "no_goal_specified": "#NoGoalSpecified",
+    "home_gym": "Home Gym",
+    "recent_workouts": "Recent Workouts",
+    "workouts_error": "Error loading workouts: ",
+    "no_workouts_yet": "No workouts saved yet.\nYou can add one by pressing the (+) button above!",
+    "workout_deleted": "Workout deleted",
+    "unnamed_workout": "Unnamed Workout",
+    "completed": "Completed"
+  },
+  "edit_profile": {
+    "user_not_found": "User not found!",
+    "photo_updated": "Profile photo updated!",
+    "photo_upload_failed": "Photo upload failed: ",
+    "full_name": "Full Name",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "prefer_not_to_say": "Prefer not to say",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "updating": "Updating...",
+    "save_changes": "Save Changes"
+  },
+  "discover": {
+    "all_discovered": "You've discovered all athletes!",
+    "refresh_list": "Refresh List",
+    "liked": "Liked! ⚡",
+    "years_old": "years old",
+    "level_not_specified": "Level not specified",
+    "gym_not_specified": "Gym not specified"
+  },
+  "help": {
+    "title": "Help Center",
+    "faq": "Frequently Asked Questions",
+    "q1": "How do I get a match?",
+    "a1": "You can browse other users' profiles on the discover screen and like people whose workout goals match yours. If they like you back, it's a match and you can start messaging.",
+    "q2": "How do I unmatch someone?",
+    "a2": "Go to the chat with the matched person from the messages screen and press the 'Unmatch' button from the options menu in the top right to end the match.",
+    "q3": "Who can see my profile?",
+    "a3": "As long as you don't turn on the Private Profile setting, other users on the platform can see your profile on the discover screen.",
+    "q4": "How can I reset my password?",
+    "a4": "You can send a reset link to your registered email address by clicking on the 'Change Password' option in the Account Settings section.",
+    "need_more_help": "Need more help?",
+    "contact_us": "Contact Us (support@gymbuddy.com)",
+    "email_error": "Could not open email app."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "content": "Last Updated: June 12, 2026\n\n1. SCOPE OF SERVICE\nThe GymBuddy app is a platform that allows athletes to match with each other and find workout partners.\n\n2. USER OBLIGATIONS\nUsers agree to use the platform in compliance with the law and in a way that does not disturb other users. Profanity, insults, and harassment are strictly prohibited within the app.\n\n3. ACCOUNT SECURITY\nPassword and account security are entirely the responsibility of the user. The support team must be informed when an unwanted situation is encountered.\n\n4. SERVICE CHANGES\nGymBuddy reserves the right to change or completely remove some features of the service without prior notice.\n\n5. CONTACT\nYou can contact us at support@gymbuddy.com for your questions about the terms of use."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "content": "Last Updated: June 12, 2026\n\n1. DATA COLLECTED\nGymBuddy collects your name, email address, profile photo, workout goals, gym preferences, and in-app messaging data to provide you with a better service.\n\n2. USE OF DATA\nThis collected data is used to provide the most accurate match with other athletes, increase your workout performance, and personalize your user experience.\n\n3. DATA SHARING\nYour personal data is never shared with third parties or institutions, except for legal obligations.\n\n4. DATA SECURITY\nYour data is stored encrypted on secure servers (Supabase). Industry-standard security measures are taken for your information security.\n\n5. ACCOUNT DELETION AND DATA DESTRUCTION\nWhen you delete your account using the 'Delete My Account' option in the settings section, all your personal information and match history are permanently deleted from our database."
+  },
+  "nearby": {
+    "title": "Nearby Athletes",
+    "location_off": "Location services are disabled.",
+    "permission_denied": "Location permission denied.",
+    "permission_denied_forever": "Location permissions are permanently denied.",
+    "error": "An error occurred while getting location: "
+  }
+}

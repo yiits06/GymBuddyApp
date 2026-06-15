@@ -1,0 +1,136 @@
+{
+  "settings": {
+    "title": "Hesap Ayarları",
+    "account_management": "HESAP YÖNETİMİ",
+    "edit_profile": "Profili Düzenle",
+    "notifications_detailed": "BİLDİRİMLER (DETAYLI)",
+    "msg_notifications": "Mesaj Bildirimleri",
+    "msg_notifications_desc": "Sohbetlerden yeni mesaj aldığında",
+    "match_notifications": "Eşleşme Bildirimleri",
+    "match_notifications_desc": "Yeni biriyle eşleştiğinde haber ver",
+    "app_preferences": "UYGULAMA TERCİHLERİ",
+    "language": "Dil Seçeneği",
+    "privacy_security": "GİZLİLİK VE GÜVENLİK",
+    "private_profile": "Gizli Profil",
+    "private_profile_desc": "Profilin keşfet ekranında görünmez",
+    "change_password": "Şifreyi Değiştir",
+    "support_info": "DESTEK VE BİLGİ",
+    "help_center": "Yardım Merkezi (SSS)",
+    "terms_of_service": "Kullanım Koşulları",
+    "privacy_policy": "Gizlilik Politikası",
+    "secure_logout": "GÜVENLİ ÇIKIŞ",
+    "logout": "Çıkış Yap",
+    "delete_account": "Hesabımı Sil",
+    "reset_email_sent": "Şifre sıfırlama bağlantısı e-posta adresinize gönderildi.",
+    "reset_email_error": "Hata oluştu. Lütfen tekrar deneyin.",
+    "no_email_found": "Bu hesaba bağlı bir e-posta adresi bulunamadı."
+  },
+  "welcome": {
+    "subtitle": "PARTNERİNİ BUL,\nLİMİTLERİNİ ZORLA",
+    "premium_community": "PREMIUM COMMUNITY",
+    "start_now": "Hemen Başla",
+    "login": "Giriş Yap",
+    "online_partners": "1,204 Online Partner",
+    "verified_profiles": "Doğrulanmış Profiller"
+  },
+  "auth": {
+    "email": "E-posta Adresi",
+    "password": "Şifre",
+    "error": "Hata"
+  },
+  "login": {
+    "enter_email_password": "Lütfen e-posta ve şifrenizi girin.",
+    "login_failed": "Giriş yapılamadı.",
+    "welcome_back": "Tekrar\nHoş Geldin",
+    "partner_waiting": "Antrenman partnerin seni bekliyor.",
+    "forgot_password": "Şifremi Unuttum",
+    "no_account": "Hesabın yok mu? ",
+    "register": "Kayıt Ol"
+  },
+  "forgot_password": {
+    "enter_registered_email": "Lütfen kayıtlı e-posta adresinizi girin.",
+    "link_sent": "Şifre sıfırlama bağlantısı e-posta adresinize gönderildi.",
+    "error_occurred": "Hata: Bir sorun oluştu. E-posta adresinizi kontrol edin.",
+    "title": "Şifreni mi\nUnuttun?",
+    "instruction": "E-posta adresini gir, sana şifreni sıfırlaman için bir bağlantı gönderelim.",
+    "send_link": "Bağlantı Gönder"
+  },
+  "profile": {
+    "not_found": "Profil bulunamadı",
+    "new_user": "Yeni Kullanıcı",
+    "not_specified": "Belirtilmedi",
+    "help_support": "Yardım ve Destek",
+    "notifications_coming_soon": "Bildirimler çok yakında eklenecek!",
+    "fitness_partner_title": "Elit Fitness Partneri | SF, CA",
+    "share_profile": "Profili Paylaş",
+    "share_text": "Hey! GymBuddy profilimi incele: ",
+    "partner_trust_score": "PARTNER GÜVEN SKORU",
+    "weekly_streak": "HAFTALIK SERİ",
+    "days": "gün",
+    "total_sessions": "TOPLAM SEANS",
+    "athletic_profile": "ATLETİK PROFİL",
+    "experience_level": "Deneyim Seviyesi",
+    "focus_goals": "Odak Hedefler",
+    "no_goal_specified": "#HedefBelirtilmedi",
+    "home_gym": "Ana Salon",
+    "recent_workouts": "Son Antrenmanlar",
+    "workouts_error": "Antrenmanlar yüklenirken hata oluştu: ",
+    "no_workouts_yet": "Henüz kaydedilmiş bir antrenman bulunamadı.\nYukarıdaki (+) butonuna basarak ekleyebilirsin!",
+    "workout_deleted": "Antrenman silindi",
+    "unnamed_workout": "İsimsiz Antrenman",
+    "completed": "Tamamlandı"
+  },
+  "edit_profile": {
+    "user_not_found": "Kullanıcı bulunamadı!",
+    "photo_updated": "Profil fotoğrafı güncellendi!",
+    "photo_upload_failed": "Fotoğraf yüklenemedi: ",
+    "full_name": "Ad Soyad",
+    "gender": "Cinsiyet",
+    "male": "Erkek",
+    "female": "Kadın",
+    "prefer_not_to_say": "Belirtmek İstemiyorum",
+    "beginner": "Başlangıç",
+    "intermediate": "Orta",
+    "advanced": "İleri Seviye",
+    "updating": "Güncelleniyor...",
+    "save_changes": "Değişiklikleri Kaydet"
+  },
+  "discover": {
+    "all_discovered": "Tüm sporcuları keşfettin!",
+    "refresh_list": "Listeyi Yenile",
+    "liked": "Beğenildi! ⚡",
+    "years_old": "yaş",
+    "level_not_specified": "Seviye belirtilmedi",
+    "gym_not_specified": "Salon belirtilmedi"
+  },
+  "help": {
+    "title": "Yardım Merkezi",
+    "faq": "Sıkça Sorulan Sorular",
+    "q1": "Nasıl eşleşme sağlayabilirim?",
+    "a1": "Keşfet ekranında diğer kullanıcıların profillerini inceleyebilir, antrenman hedefleri sana uyan kişileri beğenebilirsin. O kişi de seni beğenirse eşleşmiş olursunuz ve mesajlaşmaya başlayabilirsiniz.",
+    "q2": "Eşleşmemi nasıl iptal edebilirim?",
+    "a2": "Mesajlar ekranından eşleştiğin kişinin sohbetine girip sağ üstteki seçenekler menüsünden \"Eşleşmeyi Kaldır\" butonuna basarak eşleşmeyi sonlandırabilirsin.",
+    "q3": "Profilimi kimler görebilir?",
+    "a3": "Gizli Profil ayarını açmadığın sürece platformdaki diğer kullanıcılar profilini keşfet ekranında görebilirler.",
+    "q4": "Şifremi nasıl yenileyebilirim?",
+    "a4": "Hesap Ayarları bölümünden \"Şifreyi Değiştir\" seçeneğine tıklayarak kayıtlı e-posta adresine bir sıfırlama bağlantısı gönderebilirsin.",
+    "need_more_help": "Daha fazla yardıma mı ihtiyacın var?",
+    "contact_us": "Bize Ulaşın (destek@gymbuddy.com)",
+    "email_error": "E-posta uygulaması açılamadı."
+  },
+  "terms": {
+    "title": "Kullanım Koşulları",
+    "content": "Son Güncelleme: 12 Haziran 2026\n\n1. HİZMETİN KAPSAMI\nGymBuddy uygulaması, sporcuların birbirleriyle eşleşmesine ve antrenman arkadaşı bulmasına olanak sağlayan bir platformdur.\n\n2. KULLANICI YÜKÜMLÜLÜKLERİ\nKullanıcılar, platformu yasalara uygun ve diğer kullanıcıları rahatsız etmeyecek şekilde kullanmayı kabul eder. Uygulama içerisinde küfür, hakaret ve taciz kesinlikle yasaktır.\n\n3. HESAP GÜVENLİĞİ\nŞifre ve hesap güvenliği tamamen kullanıcının sorumluluğundadır. İstenmeyen bir durumla karşılaşıldığında destek ekibine bilgi verilmelidir.\n\n4. HİZMET DEĞİŞİKLİKLERİ\nGymBuddy, önceden haber vermeksizin hizmetin bazı özelliklerini değiştirme veya tamamen kaldırma hakkını saklı tutar.\n\n5. İLETİŞİM\nKullanım koşullarıyla ilgili sorularınız için destek@gymbuddy.com adresinden bize ulaşabilirsiniz."
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "content": "Son Güncelleme: 12 Haziran 2026\n\n1. TOPLANAN VERİLER\nGymBuddy, size daha iyi bir hizmet sunabilmek için ad, e-posta adresi, profil fotoğrafı, antrenman hedefleri, spor salonu tercihleri ve uygulama içi mesajlaşma verilerinizi toplar.\n\n2. VERİLERİN KULLANIMI\nToplanan bu veriler, diğer sporcularla en doğru eşleşmeyi sağlamak, antrenman performansınızı artırmak ve kullanıcı deneyiminizi kişiselleştirmek amacıyla kullanılır.\n\n3. VERİ PAYLAŞIMI\nKişisel verileriniz yasal zorunluluklar haricinde üçüncü şahıs veya kurumlarla asla paylaşılmaz.\n\n4. VERİ GÜVENLİĞİ\nVerileriniz güvenli sunucularda (Supabase) şifrelenerek saklanmaktadır. Bilgi güvenliğiniz için sektör standartlarında güvenlik önlemleri alınmaktadır.\n\n5. HESAP SİLME VE VERİ YOK ETME\nAyarlar bölümünden \"Hesabımı Sil\" seçeneğini kullanarak hesabınızı sildiğinizde, tüm kişisel bilgileriniz ve eşleşme geçmişiniz kalıcı olarak veritabanımızdan silinir."
+  },
+  "nearby": {
+    "title": "Yakındaki Sporcular",
+    "location_off": "Konum servisleri kapalı.",
+    "permission_denied": "Konum izni reddedildi.",
+    "permission_denied_forever": "Konum izni kalıcı olarak reddedildi.",
+    "error": "Konum alınırken bir hata oluştu: "
+  }
+}
