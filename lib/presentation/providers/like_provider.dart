@@ -31,6 +31,30 @@ class LikeRepository {
 
     return checkMatch.isNotEmpty;
   }
+
+  // Eşleşmeyi kaldırmak için kullanılan fonksiyon
+  Future<bool> unmatchUser(String matchedProfileId) async {
+    try {
+      final myId = supabase.auth.currentUser?.id;
+      if (myId == null) return false;
+
+      final profileData = await supabase.from('profiles').select('id').or('auth_id.eq.$myId,id.eq.$myId').limit(1);
+      final myProfileId = profileData.isNotEmpty ? profileData.first['id']?.toString() : null;
+      if (myProfileId == null) return false;
+
+      // Karşılıklı beğenileri (likes tablosundaki kayıtları) sil
+      await supabase.from('likes').delete().match({'liker_id': myProfileId, 'liked_id': matchedProfileId});
+      await supabase.from('likes').delete().match({'liker_id': matchedProfileId, 'liked_id': myProfileId});
+      
+      // Eşleşme tamamen kalksın diye aralarındaki sohbet geçmişini (messages tablosunu) de sil
+      await supabase.from('messages').delete().match({'sender_id': myProfileId, 'receiver_id': matchedProfileId});
+      await supabase.from('messages').delete().match({'sender_id': matchedProfileId, 'receiver_id': myProfileId});
+      
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
 }
 
 // Eşleştiğim kişilerin ID listesini getiren Provider
@@ -44,14 +68,48 @@ final myMatchesProvider = FutureProvider.autoDispose<List<Map<String, dynamic>>>
   final myProfileId = profileData.isNotEmpty ? profileData.first['id']?.toString() : null;
   if (myProfileId == null) return [];
 
-  final myLikes = await Supabase.instance.client.from('likes').select('liked_id').eq('liker_id', myProfileId);
-  final myLikedIds = (myLikes as List).map((e) => e['liked_id'].toString()).toList();
-  if (myLikedIds.isEmpty) return [];
+  final matchedIds = <String>{};
 
-  final matches = await Supabase.instance.client.from('likes').select('liker_id').inFilter('liker_id', myLikedIds).eq('liked_id', myProfileId);
-  final matchedIds = (matches as List).map((e) => e['liker_id'].toString()).toList();
+  // 1. KESİN ÇÖZÜM: Karşılıklı Beğenileri (Eşleşmeleri) Bul
+  try {
+    final allLikes = await Supabase.instance.client
+        .from('likes')
+        .select('liker_id, liked_id')
+        .or('liker_id.eq.$myProfileId,liked_id.eq.$myProfileId');
+
+    final iLiked = <String>{};
+    final likedMe = <String>{};
+
+    for (var row in allLikes as List) {
+      final liker = row['liker_id'].toString();
+      final liked = row['liked_id'].toString();
+      
+      if (liker == myProfileId) iLiked.add(liked);
+      if (liked == myProfileId) likedMe.add(liker);
+    }
+    
+    matchedIds.addAll(iLiked.intersection(likedMe));
+  } catch (_) {}
+
+  // 2. KESİN ÇÖZÜM: Mesajlaşılan Kişileri (Sohbette olanları) Eşleşme Kabul Et
+  try {
+    final messages = await Supabase.instance.client
+        .from('messages')
+        .select('sender_id, receiver_id')
+        .or('sender_id.eq.$myProfileId,receiver_id.eq.$myProfileId');
+
+    for (var msg in messages as List) {
+      final sender = msg['sender_id'].toString();
+      final receiver = msg['receiver_id'].toString();
+      
+      if (sender != myProfileId) matchedIds.add(sender);
+      if (receiver != myProfileId) matchedIds.add(receiver);
+    }
+  } catch (_) {}
+
   if (matchedIds.isEmpty) return [];
 
-  final matchedProfiles = await Supabase.instance.client.from('profiles').select('*').inFilter('id', matchedIds);
+  // 4. Eşleşilen profilleri getir
+  final matchedProfiles = await Supabase.instance.client.from('profiles').select('*').inFilter('id', matchedIds.toList());
   return List<Map<String, dynamic>>.from(matchedProfiles);
 });
